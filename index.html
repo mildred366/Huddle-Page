@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.svg">
+
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(300, 69%, 71%);
+    }
+
+    .container {
+      background-image: url(./images/bg-desktop.svg);
+      background-color: hsl(257, 40%, 49%);
+      width: 100vw;
+      height: 100vh;
+    }
+
+    nav {
+      padding: 45px 0 65px 60px;
+    }
+
+    button {
+      color: hsl(257, 40%, 49%);
+      width: 150px;
+      height: 40px;
+      border-radius: 2rem;
+      border: none;
+      box-shadow: 2px 4px 5px rgb(60, 60, 60);
+    }
+
+    h1,
+    p {
+      color: white;
+    }
+
+    #previewimg {
+      padding: 0 40px 0 70px;
+      margin: 0;
+    }
+
+    .displaygrid {
+      display: flex;
+    }
+
+    .textBox {
+      display: flex;
+      flex-direction: column;
+      margin: 50px 0 0px 30px;
+      width: 450px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    h1 {
+      width: 350px;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 30px;
+      width: 460px;
+    }
+
+    @media only screen and (max-width: 375px) {
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        background-image: url(./images/bg-mobile.svg);
+        background-color: hsl(257, 40%, 49%);
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        padding: 40px 40px 0 40px;
+      }
+
+      nav {
+        padding: 0;
+        margin: 0;
+      }
+
+      nav>img {
+        width: 100px;
+      }
+
+      .displaygrid {
+        flex-direction: column;
+      }
+
+      #previewimg {
+        width: 300px;
+        padding: 0;
+        margin-top: 60px;
+      }
+
+      .attribution {
+        margin-top: 50px;
+      }
+
+      h1 {
+        width: 250px;
+        padding-bottom: 20px;
+        margin: 0;
+        font-size: larger;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        width: 300px;
+        align-self: flex-start;
+        /* padding-right: 10px; */
+        /* font-size: small; */
+      }
+
+      button {
+        margin-top: 30px;
+        width: 200px;
+        height: 35px;
+        margin-left: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <img src="./images/logo.svg" alt="Mylogo">
+    </nav>
+    <div class="displaygrid">
+      <div>
+        <img src="./images/illustration-mockups.svg" alt="display preview" id="previewimg">
+      </div>
+      <!-- <div class="gap"></div> -->
+      <div class="textBox">
+        <div>
+          <h1>Build The Community Your Fans Will Love</h1>
+          <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create
+            connections with your users as you engage in genuine discussion.</p>
+        </div>
+        <div>
+          <button>Register</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div style="display: flex; justify-content: space-between;">
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Mildred</a>.
+        </p>
+        <!-- <i class="fa-brands fa-facebook"></i> -->
+        <img src="./images/Facebook.jpeg" alt="">
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
